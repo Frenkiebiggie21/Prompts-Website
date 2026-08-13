@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompts — Original Thinking</title>
+<style>
+  :root{
+    --bg:#0b1020; --card:#141b2f; --card2:#1a2340; --text:#eef2ff;
+    --muted:#aab4d0; --accent:#7c9cff; --accent2:#9b7cff;
+    --line:rgba(255,255,255,.1); --shadow:0 20px 50px rgba(0,0,0,.25);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:
+    radial-gradient(circle at 20% 0%,rgba(124,156,255,.18),transparent 30%),
+    radial-gradient(circle at 90% 20%,rgba(155,124,255,.15),transparent 28%),var(--bg);
+    color:var(--text);line-height:1.7;
+  }
+  nav{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.82);backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--line);padding:14px 5%;display:flex;justify-content:space-between;align-items:center}
+  .brand{font-weight:800;letter-spacing:.5px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:.9rem}
+  nav a:hover{color:#fff}
+  header{min-height:72vh;display:grid;place-items:center;text-align:center;padding:90px 7% 70px}
+  .hero{max-width:900px}
+  .eyebrow{display:inline-block;padding:7px 14px;border:1px solid var(--line);border-radius:999px;color:#cbd5ff;background:rgba(124,156,255,.08)}
+  h1{font-size:clamp(3rem,8vw,6.5rem);line-height:.95;margin:25px 0 22px;letter-spacing:-4px}
+  .hero p{font-size:1.2rem;color:var(--muted);max-width:700px;margin:auto}
+  .btn{display:inline-block;margin-top:30px;padding:13px 20px;border-radius:12px;background:var(--accent);
+       color:#07102b;text-decoration:none;font-weight:800;transition:.25s}
+  .btn:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(124,156,255,.25)}
+  main{max-width:1100px;margin:auto;padding:20px 5% 100px}
+  section{margin:90px 0;scroll-margin-top:90px}
+  .section-head{display:flex;gap:18px;align-items:flex-start;margin-bottom:25px}
+  .num{font-weight:900;color:var(--accent);font-size:1.1rem}
+  h2{font-size:clamp(1.8rem,4vw,3rem);margin:0;line-height:1.15}
+  .card{background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.025));
+        border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+  .card p{margin:0;color:#dce3f8;font-size:1.05rem}
+  .gallery{display:grid;gap:14px;margin-top:18px}
+  .one{grid-template-columns:1fr}.two{grid-template-columns:repeat(2,1fr)}.four{grid-template-columns:repeat(4,1fr)}
+  figure{margin:0;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:var(--card)}
+  figure img{display:block;width:100%;height:220px;object-fit:cover;transition:transform .45s}
+  figure:hover img{transform:scale(1.05)}
+  figcaption{padding:10px 12px;color:var(--muted);font-size:.82rem}
+  .placeholder{
+    height:220px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted);
+    background:linear-gradient(135deg,var(--card),var(--card2));
+  }
+  .highlight{border-left:4px solid var(--accent);background:rgba(124,156,255,.08);padding:22px 25px;border-radius:0 16px 16px 0}
+  footer{text-align:center;color:var(--muted);padding:40px 5%;border-top:1px solid var(--line)}
+  @media(max-width:800px){.four{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:550px){nav .links{display:none}.two,.four{grid-template-columns:1fr}h1{letter-spacing:-2px}.card{padding:22px}}
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.show{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">PROMPTS</div>
+  <div class="links">
+    <a href="#part1">Part 1</a><a href="#part2">Part 2</a><a href="#part3">Part 3</a>
+    <a href="#part4">Part 4</a><a href="#part5">Part 5</a><a href="#part6">Part 6</a><a href="#part7">Part 7</a>
+  </div>
+</nav>
+
+<header>
+  <div class="hero">
+    <span class="eyebrow">Original Thinking • Reflection • Decision Making</span>
+    <h1>Prompts</h1>
+    <p>A visual presentation of the questions, assumptions, decisions and changes that shaped my thinking throughout the process.</p>
+    <a class="btn" href="#part1">Explore the prompts ↓</a>
+  </div>
+</header>
+
+<main>
+<section id="part1" class="reveal">
+  <div class="section-head"><span class="num">01</span><h2>Part 1: Questions for Clients</h2></div>
+  <div class="card"><p>I questioned whether my initial questions were focused enough. I refined them to prioritise questions whose answers could significantly affect the product, such as business priorities, user relationships, existing systems, and the 10-week constraint, rather than asking many low-impact questions.</p></div>
+  <div class="gallery one">
+    <figure><div class="placeholder">IMAGE 1<br>Client Questions</div><figcaption>Client discovery and prioritisation</figcaption></figure>
+  </div>
+</section>
+
+<section id="part2" class="reveal">
+  <div class="section-head"><span class="num">02</span><h2>Part 2: Breaking Down the Problem</h2></div>
+  <div class="card"><p>I modified my initial model by separating <strong>confirmed requirements from assumptions</strong>. For example, I avoided assuming that managers investigate security incidents or that property owners are users before the requirement was introduced. This made the model more realistic while keeping my original user, workflow, and system breakdown.</p></div>
+  <div class="gallery four">
+    <figure><div class="placeholder">IMAGE 1</div></figure><figure><div class="placeholder">IMAGE 2</div></figure>
+    <figure><div class="placeholder">IMAGE 3</div></figure><figure><div class="placeholder">IMAGE 4</div></figure>
+  </div>
+</section>
+
+<section id="part3" class="reveal">
+  <div class="section-head"><span class="num">03</span><h2>Part 3: Version One</h2></div>
+  <div class="card"><p>I modified my original decision to leave security reporting completely out of V1. Since the scenario explicitly requires tenants to report security issues, I included <strong>basic security reporting</strong> while still leaving more advanced security functionality for later. I kept my original focus on maintenance and the 10-week constraint.</p></div>
+  <div class="gallery two">
+    <figure><div class="placeholder">IMAGE 1</div></figure><figure><div class="placeholder">IMAGE 2</div></figure>
+  </div>
+  <div class="highlight" style="margin-top:24px">
+    <h3>One Piece of AI-Generated Advice I Modified</h3>
+    <p>The clearest example was <strong>Part 3</strong>. I originally planned to postpone security incident management entirely. I modified that decision after the AI pointed out that security reporting was explicitly stated as a client requirement. Rather than accepting the idea of building a complete security-management system, I chose a smaller <strong>basic security-reporting feature for V1</strong> and left more advanced functionality for later.</p>
+    <p style="margin-top:14px">This was useful because I wasn't simply accepting or rejecting the AI's suggestion; I <strong>used it to challenge my original assumption and then made my own prioritisation decision</strong>.</p>
+  </div>
+</section>
+
+<section id="part4" class="reveal">
+  <div class="section-head"><span class="num">04</span><h2>Part 4: New Owner Requirement</h2></div>
+  <div class="card"><p>I questioned the idea that adding property owners simply meant adding another user role. I modified my thinking to recognise that ownership changes the relationship between <strong>users and buildings</strong>, which can affect permissions, data relationships, reports, and testing.</p></div>
+  <div class="gallery two"><figure><div class="placeholder">IMAGE 1</div></figure><figure><div class="placeholder">IMAGE 2</div></figure></div>
+</section>
+
+<section id="part5" class="reveal">
+  <div class="section-head"><span class="num">05</span><h2>Part 5: Existing System Investigation</h2></div>
+  <div class="card"><p>I questioned the assumption that the database must be the source of the problem. I kept my original approach of reproducing and tracing the issue, but expanded it to follow the status through the entire process: manager action → stored data → service/API → tenant application → displayed status.</p></div>
+  <div class="gallery two"><figure><div class="placeholder">IMAGE 1</div></figure><figure><div class="placeholder">IMAGE 2</div></figure></div>
+</section>
+
+<section id="part6" class="reveal">
+  <div class="section-head"><span class="num">06</span><h2>Part 6: AI Recommendation</h2></div>
+  <div class="card"><p>I questioned the recommendation to create separate databases for each user type. I did not reject it immediately; instead, I wanted to compare it with a shared database using appropriate access controls and understand the effects on reporting, data consistency, security, maintenance, and future growth.</p></div>
+  <div class="gallery one"><figure><div class="placeholder">IMAGE 1<br>AI Recommendation</div></figure></div>
+</section>
+
+<section id="part7" class="reveal">
+  <div class="section-head"><span class="num">07</span><h2>Part 7: Client Communication</h2></div>
+  <div class="card"><p>I modified my original explanation to make it more direct and less technical. I kept the same recommendation but focused more on <strong>what the client gets, why it matters, what is being postponed, and what we still need from them</strong>.</p></div>
+  <div class="gallery two"><figure><div class="placeholder">IMAGE 1</div></figure><figure><div class="placeholder">IMAGE 2</div></figure></div>
+</section>
+</main>
+
+<footer>Prompts • Original Thinking • AI-Assisted Reflection</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('show'); });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
